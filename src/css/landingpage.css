@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cover {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 990px!important;
+  }
+  
+  .logoFinal {
+    height: 50px;
+  }
+  
+  .lpText {
+    text-align: end;
+  }
+  
+  .lpText p {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    display: inline-block;
+  }
+
+  .landingpage-bg{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(white, #bfddef);
+  }

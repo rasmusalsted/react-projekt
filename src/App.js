@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom"
+import Navigation from "./components/ui/Navigation"
+import Landingpage from "./pages/landingpage/LandingPage"
+import WhatWeDo from "./pages/whatwedo/WhatWeDo"
+import Maintainable from "./pages/maintainable/Maintainable"
+import Getintouch from "./pages/getintouch/GetInTouch"
+import { Modal } from "react-bootstrap"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    
+      <Router>
+
+        <Routes>
+            <Route path="/" element={<Landingpage/>}/>
+            <Route path="/WhatWeDo" element={<WhatWeDo/>}/>
+            <Route path="/Maintainable" element={<Maintainable/>}/>
+            <Route path="/GetInTouch" element={<Getintouch/>}/>
+        </Routes>
+        
+      </Router>
+
     </div>
   );
 }

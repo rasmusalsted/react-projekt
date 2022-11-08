@@ -1,0 +1,26 @@
+
+  .modalContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+  }
+  
+ button{
+  border: none;
+  padding: 5px;
+  text-align: center;
+  float: right;
+ }
+
+ .TitleCloseBtn{
+  display: inline;
+ }
+
+ 

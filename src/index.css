@@ -1,13 +1,125 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  --WhatWeDo-bg: #abcfe6;
+  --Maintainable-bg: #bfddef;
+  --GetInTouch-bg: #ffb472;
+
+  --WhatWeDo-heading: #184059;
+  --Maintainable-heading: #5d8aa6;
+  --GetInTouch-heading: #bf7b3f;
 }
+
+.container {
+  max-width: 990px !important;
+}
+
+.cover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/*  H1 HEADING */
+
+h1 {
+  padding-top: 10px;
+  letter-spacing: -0.2rem;
+}
+
+.whatwedo-h1 {
+  color: var(--WhatWeDo-heading);
+}
+
+.maintain-h1{
+  color: var(--Maintainable-heading);
+}
+
+.getintouch-h1{
+  color: var(--GetInTouch-heading);
+}
+
+p {
+  color: white;
+  line-height: 1rem;
+}
+
+.logo-a {
+  width: 100px !important;
+  height: 30px !important;
+}
+
+.logo-row {
+  align-items: end;
+  justify-content: end;
+  height: 300px;
+  padding-bottom: 20px;
+}
+
+article {
+  text-align: justify;
+}
+
+
+
+.what-we-do {
+text-align: end;
+}
+
+.what-we-do p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  margin: 0 !important;
+
+}
+
+.contact-container{
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-container p{
+  color: black;
+  font-size: .8rem;
+}
+
+.contact-mobile-img{
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.contact-mobile-img:hover{
+  cursor: pointer;
+}
+
+/* backgrounds */
+
+.getintouch-bg{
+  background-color: var(--GetInTouch-bg);
+  width: 100%;
+  min-height: 100vh;
+}
+
+.maintainable-bg{
+  background-color: var(--Maintainable-bg);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.whatwedo-bg{
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--WhatWeDo-bg);
+}
+
